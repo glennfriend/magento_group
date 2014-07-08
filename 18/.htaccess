@@ -1,4 +1,20 @@
 ############################################
+## maintenance
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     RewriteBase /
+#     RewriteCond %{REMOTE_HOST} !^118\.163\.151\.13
+#     RewriteCond %{REMOTE_HOST} !^127\.0\.0\.1
+#     RewriteCond %{REMOTE_HOST} !^192\.168\.
+#
+#     RewriteCond %{REQUEST_URI} !/maintenance/index.html$
+#     RewriteCond %{REQUEST_URI} !/maintenance/logo.gif$
+#     RewriteCond %{REQUEST_URI} !/maintenance/maintenance.jpg$
+#     RewriteRule ^(.*)$ /maintenance/index.html [R=302,L]
+# </IfModule>
+
+
+############################################
 ## uncomment these lines for CGI mode
 ## make sure to specify the correct cgi php binary file name
 ## it might be /cgi-bin/php-cgi
