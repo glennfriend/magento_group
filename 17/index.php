@@ -71,6 +71,8 @@ require_once $mageFilename;
 #Varien_Profiler::enable();
 
 if (isset($_SERVER['MAGE_IS_DEVELOPER_MODE'])) {
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
     Mage::setIsDeveloperMode(true);
 }
 
